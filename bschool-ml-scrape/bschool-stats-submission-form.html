@@ -1,0 +1,94 @@
+		<form id="form_43381" class="appnitro"  method="post" action="">
+					<div class="form_description">
+			<h2>MBA Profile</h2>
+			<p>Enter your stats/demographics. Note that they are crude because the model is crude and isn't attempting to capture all of the dimensions/nuances that make you special and more interesting than 7 parameters.</p>
+		</div>						
+			<ul >
+			
+					<li id="li_3" >
+		<label class="description" for="element_3">Age
+ </label>
+		<div>
+			<input id="age" type="number" min="18" max="99"  name="element_3" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_1" >
+		<label class="description" for="element_1">GPA </label>
+		<div>
+			<input id="gpa" type="number" min="0.0" max="4.0" name="element_1" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_2" >
+		<label class="description" for="element_2">GMAT </label>
+		<div>
+			<input id="gmat" type="number" min="200" max="800" name="element_2" class="element text medium" type="text" maxlength="3" value=""/> 
+		</div> 
+		</li>		<li id="li_4" >
+		<label class="description" for="element_4">Degree Granting School </label>
+		<div>
+		<select class="element select medium" id="school-i-went-to" name="element_4"> 
+			<option value="" selected="selected"></option>
+<option value="1" >Name Brand School</option>
+<option value="0" >Not Name Brand School</option>
+
+		</select>
+		</div> 
+		</li>		<li id="li_7" >
+		<label class="description" for="element_7">Major </label>
+		<div>
+		<select class="element select medium" id="major" name="element_7"> 
+			<option value="" selected="selected"></option>
+<option value="1" >STEM</option>
+<option value="0" >Not STEM</option>
+
+		</select>
+		</div> 
+		</li>		<li id="li_5" >
+		<label class="description" for="element_5">Race </label>
+		<div>
+		<select class="element select medium" id="race" name="element_5"> 
+			<option value="" selected="selected"></option>
+<option value="1" >Underrepresented Minority</option>
+<option value="0" >Non URM</option>
+
+		</select>
+		</div> 
+		</li>		
+        <li id="li_6" >
+		<label class="description" for="element_6">Gender </label>
+		<div>
+		<select class="element select medium" id="gender" name="element_6"> 
+			<option value="" selected="selected"></option>
+<option value="0" >Male</option>
+<option value="1" >Female</option>
+
+		</select>
+		</div> 
+		</li>
+                
+        <li id="li_7" >
+		<label class="description" for="element_7">Aspirational MBA</label>
+		<div>
+		<select class="element select medium" id="school-i-wanna-go-to" name="element_7"> 
+			<option value="" selected="selected"></option>
+<option value="stanford" >Stanford GSB</option>
+<option value="harvard" >Harvard Business School</option>
+<option value="wharton" >UPenn Wharton</option>
+<option value="booth" >University of Chicago Booth</option>
+<option value="columbia" >Columbia Business School</option>
+<option value="sloan" >M.I.T Sloan</option>
+<option value="kellogg" >Northwestern Kellogg</option>
+
+		</select>
+		</div> 
+		</li> 
+                
+						    
+			</ul>
+		</form>	
+
+
+<!---<button id="saveForm" class="btn waves-effect waves-light" type="button" name="action" onclick="genPredictions()">Request
+    <i class="material-icons right">Tell Me My Fate</i>
+</button>--->
+
+
+<button id="saveForm" style="background-color: #008CBA; border-radius:6px; box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);" type="button" onclick="genPredictions()">Tell Me My Fate</button>
