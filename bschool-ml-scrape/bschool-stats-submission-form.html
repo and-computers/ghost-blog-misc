@@ -8,8 +8,8 @@
 
 
 <!-- Compiled and minified JavaScript -->
-<!---<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>--->
-<!-- Override default nav style in materialize -->
+<!-- -<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-
+ --><!-- Override default nav style in materialize -->
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -158,32 +158,30 @@ function genPredictions() {
   var gmat = document.getElementById("gmat").value;
   var gpa = document.getElementById("gpa").value;
   var age = document.getElementById("age").value;
-  var nameBrandSchool = "0"
-  var major = "0"
-  var urm = "0"
-  var gender = "1"
   var aspirationalSchool = document.getElementById("school-i-wanna-go-to").value;
 
-
-
-	if($('#school-i-went-to').is(":checked")){
-	        var nameBrandSchool = "1"
-
+	if($("#school-i-went-to").is(":checked")){
+	        var nameBrandSchool = "1";
+	      } else {
+	      	var nameBrandSchool = "0";
 	      }
 
-	if($('#major').is(":checked")){
-	        var major = "1"
-
+	if($("#major").is(":checked")){
+	        var major = "1";
+	      } else {
+	      	var major = "0";
 	      }
 
-	if($('#race').is(":checked")){
+	if($("#race").is(":checked")){
 	        var urm = "1"
-
+	      } else {
+	      	var urm = "0";
 	      }
 
-	if($('#gender').is(":checked")){
-	        var gender = "0"
-
+	if($("#gender").is(":checked")){
+	        var gender = "0";
+	      } else {
+	      	var gender = "1";
 	      }
 
   var postbody = {"gpa":gpa,
@@ -252,16 +250,11 @@ function genPredictions() {
 			</div>
 		</li>
 		<li id="li_4" >
-<!-- 			<label class="description" for="element_4">Degree Granting School </label>
- -->			<div>
-<!-- 				<select class="element select medium" id="school-i-went-to" name="element_4">
-					<option value="" selected="selected"></option>
-					<option value="1" >Name Brand School</option>
-					<option value="0" >Not Name Brand School</option>
-				</select> -->
+			<div>
+
 			    <p>
 			      <label>
-			        <input type="checkbox" />
+			        <input id="school-i-went-to" type="checkbox" />
 			        <span>Degree From a Name Brand Schoole</span>
 			      </label>
 			    </p>
@@ -270,38 +263,22 @@ function genPredictions() {
 			</div>
 		</li>
 		<li id="li_7" >
-<!-- 		<label class="description" for="element_7">Major </label>
- -->			<div>
-<!-- 				<select class="element select medium" id="major" name="element_7">
-					<option value="" selected="selected"></option>
-					<option value="1" >STEM</option>
-					<option value="0" >Not STEM</option>
-
-				</select> -->
-
+			<div>
 			    <p>
 			      <label>
-			        <input type="checkbox" />
+			        <input id="major" type="checkbox" />
 			        <span>Studied STEM</span>
 			      </label>
 			    </p>
-
-
 			</div>
 		</li>
 		<li id="li_5" >
-<!-- 			<label class="description" for="element_5">Race </label>
- -->			<div>
-<!-- 				<select class="element select medium" id="race" name="element_5">
-					<option value="" selected="selected"></option>
-					<option value="1" >Underrepresented Minority</option>
-					<option value="0" >Non URM</option>
-				</select>
- -->
+ 			<div>
+
 
 		    <p>
 		      <label>
-		        <input type="checkbox" />
+		        <input id="race" type="checkbox" />
 		        <span>Underrepresented Minority</span>
 		      </label>
 		    </p>
@@ -310,23 +287,13 @@ function genPredictions() {
 			</div>
 			</li>
 	        <li id="li_6" >
-<!-- 			<label class="description" for="element_6">Gender </label>
- -->			<div>
-<!-- 				<select class="element select medium" id="gender" name="element_6">
-					<option value="" selected="selected"></option>
-					<option value="0" >Male</option>
-					<option value="1" >Female</option>
-
-				</select> -->
-
-		    <p>
-		      <label>
-		        <input type="checkbox" />
-		        <span>Male</span>
-		      </label>
-		    </p>
-
-
+			<div>
+			    <p>
+			      <label>
+			        <input id="gender" type="checkbox" />
+			        <span>Male</span>
+			      </label>
+			    </p>
 
 			</div>
 		</li>
